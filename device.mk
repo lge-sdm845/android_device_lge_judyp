@@ -16,11 +16,11 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/lge/judyp/judyp-vendor.mk)
-
 DEVICE_PATH := device/lge/judyp
 DEVICE_NAME := judyp
+
+# common judy (sdm845)
+$(call inherit-product, device/lge/sdm845-common/sdm845.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -83,5 +83,5 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/init.recovery.judyp.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.judyp.rc
 
-# common judy (sdm845)
-$(call inherit-product, device/lge/sdm845-common/sdm845.mk)
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/lge/judyp/judyp-vendor.mk)
