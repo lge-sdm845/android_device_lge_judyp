@@ -17,10 +17,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/lge/judypn/judypn-vendor.mk)
+$(call inherit-product, vendor/lge/judyp/judyp-vendor.mk)
 
-DEVICE_PATH := device/lge/judypn
-DEVICE_NAME := judypn
+DEVICE_PATH := device/lge/judyp
+DEVICE_NAME := judyp
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -28,16 +28,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_effects_tune.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_tune.xml \
     $(DEVICE_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    $(DEVICE_PATH)/audio/audio_platform_info_mono.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_mono.xml \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(DEVICE_PATH)/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
     $(DEVICE_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(DEVICE_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(DEVICE_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml \
@@ -78,7 +75,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/recovery/root/init.recovery.judypn.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.judypn.rc
+    $(DEVICE_PATH)/recovery/root/init.recovery.judyp.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.judyp.rc
 
 # common judy (sdm845)
 $(call inherit-product, device/lge/sdm845-common/sdm845.mk)

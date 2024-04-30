@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/judypn
+DEVICE_PATH := device/lge/judyp
 
 # Inherit from common device tree
 include device/lge/sdm845-common/BoardConfigCommon.mk
@@ -23,13 +23,13 @@ include device/lge/sdm845-common/BoardConfigCommon.mk
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn androidboot.fstab_suffix=judypn
-TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.hardware=judyp androidboot.fstab_suffix=judyp
+TARGET_KERNEL_CONFIG := lineageos_judyp_defconfig
 
 # Partitions
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 113775689728
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 48708296704
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
+BOARD_VENDORIMAGE_PARTITION_SIZE := 1048576000
 
 # Platform
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
@@ -41,4 +41,4 @@ TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
 VENDOR_SECURITY_PATCH := 2020-07-01
 
 # inherit from the proprietary version
-include vendor/lge/judypn/BoardConfigVendor.mk
+include vendor/lge/judyp/BoardConfigVendor.mk

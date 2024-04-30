@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=judypn
+export DEVICE=judyp
 export DEVICE_COMMON=sdm845-common
 export VENDOR=lge
 export VENDOR_COMMON=${VENDOR}
