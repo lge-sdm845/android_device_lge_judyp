@@ -241,6 +241,9 @@
             </routes>
         </module>
 
+        <!-- Bluetooth Audio HAL -->
+        <xi:include href="/vendor/etc/bluetooth_audio_policy_configuration.xml"/>
+
         <!-- Usb Audio HAL -->
         <module name="usb" halVersion="2.0">
             <mixPorts>
