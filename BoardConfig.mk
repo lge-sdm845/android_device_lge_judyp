@@ -40,5 +40,8 @@ TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2020-07-01
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # inherit from the proprietary version
 include vendor/lge/judyp/BoardConfigVendor.mk
