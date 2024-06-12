@@ -79,9 +79,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
 	$(DEVICE_PATH)
 
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/recovery/root/init.recovery.judyp.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.judyp.rc
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/lge/judyp/judyp-vendor.mk)
