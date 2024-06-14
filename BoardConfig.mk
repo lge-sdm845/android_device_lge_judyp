@@ -22,6 +22,10 @@ include device/lge/sdm845-common/BoardConfigCommon.mk
 # Camera
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/framework_compatibility_matrix.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyp androidboot.fstab_suffix=judyp
 TARGET_KERNEL_CONFIG := lineageos_judyp_defconfig
