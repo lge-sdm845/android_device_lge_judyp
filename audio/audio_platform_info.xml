@@ -133,6 +133,7 @@
     <backend_names>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_LGE_OUT_VOICE_SPEAKER_EXTRA_VOLUME" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_LGE_OUT_VOICE_SPEAKER_VC_EXTRA_VOLUME" backend="speaker" interface="QUAT_MI2S_RX"/>
         <device name="SND_DEVICE_LGE_OUT_VOIP_SPEAKER" backend="speaker" interface="QUAT_MI2S_RX"/>
