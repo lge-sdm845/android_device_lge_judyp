@@ -66,5 +66,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
 	$(DEVICE_PATH)
 
+# Wi-Fi Overlay
+PRODUCT_PACKAGES += \
+    WifiOverlayV35
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/lge/judyp/judyp-vendor.mk)
