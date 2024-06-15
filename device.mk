@@ -52,10 +52,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.lge.hardware.biometrics.fingerprint@2.1.vendor
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.lge
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
