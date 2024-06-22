@@ -30,12 +30,12 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judyp androidboot.fstab_suffix=judyp
 TARGET_KERNEL_CONFIG := lineageos_judyp_defconfig
 
+# Lights
+$(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1048576000
-
-# Platform
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
