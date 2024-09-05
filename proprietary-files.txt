@@ -3,11 +3,8 @@
 
 # ADSP
 vendor/bin/chre
-vendor/lib/libfastcrc.so
-vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libsymphony-1.1.4.so
 vendor/lib/libsymphonypower-1.1.4.so
-vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libsymphony-1.1.4.so
 vendor/lib64/libsymphonypower-1.1.4.so
 
@@ -249,40 +246,12 @@ vendor/lib/camera/com.qti.tuned.sl846.bin
 # Camera - HDR
 vendor/etc/camera/vnr/SJ_VideoNR_LUT.bin
 
-# Crypto
-vendor/lib/libLgeVendorFeatures2.so
-vendor/lib/libatd_modeminterface.so
-vendor/lib/libbluedroid_bdt.so
-vendor/lib/libcpion.so
-vendor/lib/libfpfactory-impl.so
-vendor/lib/libhdcpsrm.so
-vendor/lib/liblgefido_hal_impl.so
-vendor/lib/liblgehdcpek.so
-vendor/lib/liblgftmitem_vendor.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libpvr.so
-vendor/lib/librmp.so
-vendor/lib/libunified_sysfs_vendor.so
-vendor/lib/libwvoemprov.so
-vendor/lib/vendor.lge.hardware.filehandle@1.0.so
-vendor/lib64/libLgeVendorFeatures2.so
-vendor/lib64/libfpfactory-impl.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/liblgefido_hal_impl.so
-vendor/lib64/liblgftmitem_vendor.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libpvr.so
-vendor/lib64/librmp.so
-vendor/lib64/libunified_sysfs_vendor.so
-
 # Fingerprint
 vendor/bin/hw/vendor.lge.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/hw/init.lge.fingerprints.rc
 vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc
 -vendor/etc/vintf/manifest/vendor.lge.hardware.biometrics.fingerprint@2.1.xml
-vendor/lib/libfpfactory.so
 vendor/lib64/hw/fingerprint.sdm845.so
-vendor/lib64/libfpfactory.so
 vendor/usr/idc/uinput-fpc.idc
 vendor/usr/keylayout/uinput-fpc.kl
 
