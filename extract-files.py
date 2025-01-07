@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+from extract_utils.fixups_blob import (
+    blob_fixup,
+    blob_fixups_user_type,
+)
 from extract_utils.fixups_lib import (
     lib_fixups,
 )
@@ -18,11 +22,20 @@ namespace_imports = [
     "vendor/qcom/opensource/display",
 ]
 
+blob_fixups: blob_fixups_user_type = {
+    'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+}  # fmt: skip
+
+
 module = ExtractUtilsModule(
     'judyp',
     'lge',
-    namespace_imports=namespace_imports,
+    blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
