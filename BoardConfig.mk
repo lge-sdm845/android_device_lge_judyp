@@ -23,6 +23,7 @@ include device/lge/sdm845-common/BoardConfigCommon.mk
 TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/framework_compatibility_matrix.xml
 
