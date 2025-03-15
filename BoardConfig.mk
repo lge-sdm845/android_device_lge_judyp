@@ -17,7 +17,7 @@
 DEVICE_PATH := device/lge/judyp
 
 # Inherit from common device tree
-include device/lge/sdm845-common/BoardConfigCommon.mk
+include device/lge/sdm845-common/BoardConfigJudy.mk
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
