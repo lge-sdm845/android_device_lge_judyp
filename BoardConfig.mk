@@ -19,9 +19,6 @@ DEVICE_PATH := device/lge/judyp
 # Inherit from common device tree
 include device/lge/sdm845-common/BoardConfigCommon.mk
 
-# Camera
-TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
