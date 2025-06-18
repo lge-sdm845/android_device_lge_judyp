@@ -16,6 +16,10 @@
 
 DEVICE_PATH := device/lge/judyp
 
+# Audio
+BOARD_LGE_HAS_EXT_AMPLIFIER := true
+BOARD_LGE_HAS_HIFI_QUAD_DAC := true
+
 # Inherit from common device tree
 include device/lge/sdm845-common/BoardConfigJudy.mk
 
